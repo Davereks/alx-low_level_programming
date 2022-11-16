@@ -14,4 +14,8 @@ if (!array || !action)
 return;
 while (size > 0)
 {
-  
+(*action)(*array);
+array++;
+size--;
+}
+}
